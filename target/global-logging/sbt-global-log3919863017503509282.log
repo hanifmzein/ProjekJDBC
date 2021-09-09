@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(33317344-64ef-4d3a-b557-57db03d48d27), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@27ec74a3, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0mCanceling execution...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: run[0m
+[0m[[0m[31merror[0m] [0m[0mCancelled: run[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

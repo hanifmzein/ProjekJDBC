@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(8d97a8b8-4b94-4e55-914f-458c2bd9b037), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@723c5f86, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 37 s, completed Sep 9, 2021 11:15:37 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

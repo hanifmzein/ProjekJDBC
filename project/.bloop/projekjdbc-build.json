@@ -1,0 +1,346 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "projekjdbc-build",
+        "directory": "/Users/hanif/Programs/Scala/projekjdbc/project",
+        "workspaceDir": "/Users/hanif/Programs/Scala/projekjdbc/project",
+        "sources": [
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/scala",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/scala-2.12",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/scala-2",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/java",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/scala-sbt-1.0",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/target/scala-2.12/sbt-1.0/src_managed/main",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/Dependencies.scala"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-library.jar",
+            "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6/sbt-bloop-1.4.6.jar",
+            "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.0/jna-4.5.0.jar",
+            "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.5.0/jna-platform-4.5.0.jar",
+            "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.jar",
+            "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-xml_2.12-1.0.6.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/protocol_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/launcher-interface-1.3.3.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/compiler-interface-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-logging_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/shaded-jawn-parser_2.12-0.9.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/log4j-api-2.11.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/okhttp-3.14.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/run_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/io_2.12-1.5.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-collection-compat_2.12-2.4.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/gigahorse-core_2.12-0.5.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-reader-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/slf4j-api-1.7.26.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-classpath_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/sbinary_2.12-0.5.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/error_prone_annotations-2.4.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-persist_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/test-interface-1.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/tasks_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-terminal-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/config-1.3.3.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/sjson-new-core_2.12-0.9.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-persist-core-assembly-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scripted-plugin_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/lm-coursier-shaded_2.12-2.0.8.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-compiler-2.12.14.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/logic_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/log4j-slf4j-impl-2.11.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/checker-qual-3.4.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/collections_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/log4j-core-2.11.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/caffeine-2.8.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/core-macros_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-control_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/ssl-config-core_2.12-0.4.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-reflect-2.12.14.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-2.14.7-sbt-a1b0ffbb8f64bb820f4f84a0c07a0c0964507493.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/actions_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-terminal-jna-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/command_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/main-settings_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-classfile_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-terminal-jansi-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-parser-combinators_2.12-1.1.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/task-system_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-xml_2.12-1.3.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-cache_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/testing_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jansi-2.1.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jna-platform-5.5.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/librarymanagement-core_2.12-1.5.3.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/okhttp-urlconnection-3.7.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/reactive-streams-1.0.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/disruptor-3.4.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-builtins-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-compile_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/ipcsocket-1.3.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-interface-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-relation_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/sbt-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jna-5.5.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/sjson-new-murmurhash_2.12-0.9.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/template-resolver-0.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/file-tree-views-2.1.6.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/main_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/librarymanagement-ivy_2.12-1.5.3.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/scala-library-2.12.14.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-position_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/gigahorse-okhttp_2.12-0.5.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/sjson-new-scalajson_2.12-0.9.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-core_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jsch-0.1.54.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/jline-style-3.19.0.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/okio-1.17.2.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/completion_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/compiler-bridge_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/util-tracking_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/ivy-2.3.0-sbt-fbc4f586aeeb1591710b14eb4f41b94880dcd745.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zero-allocation-hashing-0.10.1.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-lm-integration_2.12-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/test-agent-1.5.5.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-apiinfo_2.12-1.5.7.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/shaded-scalajson_2.12-1.0.0-M4.jar",
+            "/Users/hanif/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/zinc-compile-core_2.12-1.5.7.jar"
+        ],
+        "out": "/Users/hanif/Programs/Scala/projekjdbc/project/.bloop/projekjdbc-build",
+        "classesDir": "/Users/hanif/Programs/Scala/projekjdbc/project/.bloop/projekjdbc-build/scala-2.12/sbt-1.0/classes",
+        "resources": [
+            "/Users/hanif/Programs/Scala/projekjdbc/project/src/main/resources",
+            "/Users/hanif/Programs/Scala/projekjdbc/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.12.14",
+            "options": [
+                "-deprecation",
+                "-Wconf:cat=unused-nowarn:s",
+                "-Wconf:cat=unused-nowarn:s"
+            ],
+            "jars": [
+                "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-library.jar",
+                "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar",
+                "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar",
+                "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-xml_2.12-1.0.6.jar"
+            ],
+            "analysis": "/Users/hanif/Programs/Scala/projekjdbc/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "sbt": {
+            "sbtVersion": "1.5.5",
+            "autoImports": [
+                "import _root_.scala.xml.{TopScope=>$scope}",
+                "import _root_.sbt._",
+                "import _root_.sbt.Keys._",
+                "import _root_.sbt.nio.Keys._",
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/hanif/Programs/Scala/projekjdbc/project"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "ch.epfl.scala",
+                    "name": "sbt-bloop",
+                    "version": "1.4.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-bloop",
+                            "path": "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.4.6/sbt-bloop-1.4.6.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.java.dev.jna",
+                    "name": "jna",
+                    "version": "4.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jna",
+                            "path": "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.0/jna-4.5.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "net.java.dev.jna",
+                    "name": "jna-platform",
+                    "version": "4.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jna-platform",
+                            "path": "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.5.0/jna-platform-4.5.0.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.gson",
+                    "name": "gson",
+                    "version": "2.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "gson",
+                            "path": "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "/Users/hanif/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-library.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.12.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "path": "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-compiler",
+                    "version": "2.12.14",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-compiler",
+                            "path": "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.12.14",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-library.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.14",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/hanif/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
