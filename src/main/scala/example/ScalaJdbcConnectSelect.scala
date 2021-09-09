@@ -33,6 +33,21 @@ object ScalaJdbcConnectSelect extends App {
       return result
     }
 
+    def updateData( patient:Patient) : Int = {
+
+      val id = patient.patient_id
+      val nama = patient.patient_name
+      val gender = patient.gender
+      val date = patient.date_birth
+      val address = patient.address
+
+      val query = s"UPDATE `patient` SET `patient_name` = '$nama', `gender` = '$gender', `date_birth` = '$date', `address` = '$address' WHERE `patient`.`patient_id` = $id"
+      println("QUERY : "+query)
+      val result:Int = statement.executeUpdate(query)
+
+      return result
+    }
+
     def deleteData(id:Int) : Int = {
 
       val query = s"DELETE FROM `patient` WHERE `patient`.`patient_id` = $id"
@@ -41,7 +56,7 @@ object ScalaJdbcConnectSelect extends App {
       return result
     }
 
-    case class Patient(patient_id: Option[Int] , patient_name: String, 
+    case class Patient(patient_id: Int , patient_name: String, 
       gender: Char, date_birth: String, address: String)
 
     var l = true
@@ -55,10 +70,14 @@ object ScalaJdbcConnectSelect extends App {
         val gender = rs.getString("gender")
         val birth = rs.getString("date_birth")
         val address = rs.getString("address")
-        println(s"$id. $name, $address")
+        println(s"Pasien #$id\nNama : $name\nGender : $gender\nLahir : $birth\nAlamat : $address\n")
       }
 
-      println("-------------\n1. Tambah Data\n4. Hapus Data\n0. Exit\n\n")
+      println("-------------\n" +
+        "1. Tambah Data\n" +
+        "2. Ganti Data\n" +
+        "3. Hapus Data\n" +
+        "\n0. Exit\n\n")
       val pilih = readLine("pilih : ")
       if (pilih == "1"){
         val i_name = readLine("Masukan Nama : ")
@@ -66,11 +85,24 @@ object ScalaJdbcConnectSelect extends App {
         val i_date = readLine("Masukan date (yyyy-mm-dd) : ")
         val i_address = readLine("Masukan Alamat : ")
 
-        val t_patient = Patient(null, i_name, i_gender, i_date, i_address)
+        val t_patient = Patient(0, i_name, i_gender, i_date, i_address)
 
         addData(t_patient)
 
-      } else if (pilih == "4"){
+      } else if (pilih == "2"){
+
+        val i_id = readLine("Masukan id : ").toInt
+        val i_name = readLine("Masukan Nama : ")
+        val i_gender = readLine("Masukan gender (l/p) : ").toCharArray()(0)
+        val i_date = readLine("Masukan date (yyyy-mm-dd) : ")
+        val i_address = readLine("Masukan Alamat : ")
+
+        val t_patient = Patient(i_id, i_name, i_gender, i_date, i_address)
+
+        updateData(t_patient)
+        
+
+      } else if (pilih == "3"){
 
         val id = readLine("Masukan Id : ").toInt
         deleteData(id)

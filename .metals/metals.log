@@ -3000,3 +3000,27 @@ WARNING: Unmatched cancel notification for request id 9831
 [0m2021.09.09 11:15:35 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
 Sep 09, 2021 11:39:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 9855
+[0m2021.09.09 11:45:18 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:47:27 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:48:25 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:48:25 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:48:41 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:58:40 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 11:59:35 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:00:04 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+Sep 09, 2021 12:03:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11141
+[0m2021.09.09 12:03:16 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:03:32 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:04:40 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:08:50 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:08:59 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+Sep 09, 2021 12:09:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11428
+[0m2021.09.09 12:09:28 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:09:33 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:12:56 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+[0m2021.09.09 12:13:32 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
+Sep 09, 2021 12:14:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11587
+[0m2021.09.09 12:16:39 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbcConnectSelect.scala[0m
