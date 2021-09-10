@@ -1,4 +1,4 @@
 package model
 
-case class Patient(id: Option[Int], email: String, 
-  firstName: Option[String], lastName: Option[String])
+case class Patient(patient_id: Int , patient_name: String, 
+  gender: Char, date_birth: String, address: String)
