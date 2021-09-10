@@ -5,6 +5,7 @@ import scala.io.StdIn.readLine
 import action.PatientDAO
 import action.CityDAO
 import model.Patient
+import model.City
 
 object ScalaJdbcConnectSelect extends App {
 
@@ -21,6 +22,7 @@ object ScalaJdbcConnectSelect extends App {
         "1. Tambah Data\n" +
         "2. Ganti Data\n" +
         "3. Hapus Data\n" +
+        "4. Data City\n" +
         "\n0. Exit\n\n")
       val pilih = readLine("pilih : ")
       if (pilih == "1"){
@@ -58,6 +60,43 @@ object ScalaJdbcConnectSelect extends App {
 
         val id = readLine("Masukan Id : ").toInt
         PatientDAO.deleteData(id)
+
+      } else if (pilih == "4") {
+
+        var c = true
+        while (c == true){
+
+          println("Daftar City\n-------------")
+          CityDAO.showData()
+          println("-------------\n" +
+            "1. Tambah Data\n" +
+            "2. Ganti Data\n" +
+            "3. Hapus Data\n" +
+            "\n0. Exit\n\n")
+
+            val pilih = readLine("pilih : ")
+
+            if (pilih == "1"){
+              val i_name = readLine("Masukan Nama city : ")
+              val t_city = City(0, i_name)
+
+              CityDAO.addData(t_city)
+
+            } else if (pilih == "2"){
+
+              val i_id = readLine("Masukan id city : ").toInt
+              val i_name = readLine("Masukan Nama city : ")
+
+              val t_city = City(i_id, i_name)
+
+              CityDAO.updateData(t_city)
+
+            }else if (pilih == "0"){
+              c = false
+            }
+        }
+
+
 
       } else if (pilih=="0") {
         l = false

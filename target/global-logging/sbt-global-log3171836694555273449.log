@@ -1,8 +1,8 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(52ba9c75-43c4-4132-bdc3-5812dbc9716b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(82a9db5f-3bd5-4a6e-bd1b-3b23fbe43489), Some(CommandSource(console0)))[0m
 [0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@b5ff70b, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@3bf26810, check cycles: false, forcegc: true[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes ...[0m
 [0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 38 s, completed Sep 10, 2021 10:32:37 AM[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 18 s, completed Sep 10, 2021 10:55:20 AM[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

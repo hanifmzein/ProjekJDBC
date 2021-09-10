@@ -12333,3 +12333,33 @@ WARNING: Unmatched cancel notification for request id 22801
 [0m2021.09.10 10:33:30 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
 [0m2021.09.10 10:33:55 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/PatientDAO.scala[0m
 [0m2021.09.10 10:34:29 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/PatientDAO.scala[0m
+[0m2021.09.10 10:38:59 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:39:12 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:43:06 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:43:28 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:43:51 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:44:12 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:44:41 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:45:24 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+Sep 10, 2021 10:45:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23851
+Sep 10, 2021 10:45:30 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 23862
+[0m2021.09.10 10:46:15 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+[0m2021.09.10 10:47:36 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+[0m2021.09.10 10:49:53 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:50:11 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:50:39 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:50:41 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:52:08 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:52:08 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:52:08 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:53:19 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.10 10:54:09 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+Sep 10, 2021 10:54:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24772
+[0m2021.09.10 10:54:49 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+[0m2021.09.10 10:54:53 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+Sep 10, 2021 10:54:53 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24805
+[0m2021.09.10 10:54:53 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m

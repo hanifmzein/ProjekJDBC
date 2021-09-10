@@ -43,8 +43,9 @@ object CityDAO {
 
       val nama = city.city_name
 
-      val query = s"INSERT INTO  city`( city_name`) " +
-                s"VALUES ('$nama')"
+      val query = s"INSERT INTO  city (city_name) VALUES ('$nama')"
+      
+      println("QUERY : "+query)
       
       val result = statement.executeUpdate(query)
 
@@ -68,8 +69,10 @@ object CityDAO {
         val id = city.city_id
         val nama = city.city_name
 
-        val query = s"UPDATE  city` SET  city_name` = '$nama'" +
-          s"WHERE  city`. city_id` = $id"
+        val query = s"UPDATE  city SET city_name = '$nama'" +
+          s"WHERE  city. city_id = $id"
+
+        // println("QUERY : "+query)
 
         val result = statement.executeUpdate(query)
 
