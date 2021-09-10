@@ -3,6 +3,9 @@ package action
 import model.City
 import java.sql.{Connection,DriverManager}
 
+import example.Query
+import example.Conn
+
 object CityDAO {
 
   val url = "jdbc:mysql://localhost:3306/rs_db?serverTimezone=Asia/Jakarta"
@@ -13,95 +16,41 @@ object CityDAO {
 
   def showData(){
 
-    try {
-        Class.forName(driver)
-        connection = DriverManager.getConnection(url, username, password)
-        val statement = connection.createStatement
+    val query = "SELECT * FROM city"
+    val rs = Query.read(query)
 
-        val query = "SELECT * FROM city"
-        val rs = statement.executeQuery(query)
+    while (rs.next) {
+      val id = rs.getString("city_id")
+      val name = rs.getString("city_name")
 
-        while (rs.next) {
-          val id = rs.getString("city_id")
-          val name = rs.getString("city_name")
-
-          println(s"City #$id\nNama : $name")
-        }
-
-        connection.close
-        } catch {
-        case e: Exception => e.printStackTrace
+      println(s"City #$id\nNama : $name")
     }
+
+    Conn.connection.close
   }
    
   def addData( city:City ) = {
 
-    try {
-      Class.forName(driver)
-      connection = DriverManager.getConnection(url, username, password)
-      val statement = connection.createStatement
-
-      val nama = city.city_name
-
-      val query = s"INSERT INTO  city (city_name) VALUES ('$nama')"
-      
-      println("QUERY : "+query)
-      
-      val result = statement.executeUpdate(query)
-
-      connection.close
-
-      // return result
-
-    } catch {
-        
-      case e: Exception => e.printStackTrace
-    }
+    val nama = city.city_name
+    val query = s"INSERT INTO  city (city_name) VALUES ('$nama')"
+    Query.execute(query)
   }
 
   def updateData( city:City) = {
 
-    try {
-        Class.forName(driver)
-        connection = DriverManager.getConnection(url, username, password)
-        val statement = connection.createStatement
+    val id = city.city_id
+    val nama = city.city_name
 
-        val id = city.city_id
-        val nama = city.city_name
+    val query = s"UPDATE  city SET city_name = '$nama'" +
+      s"WHERE  city. city_id = $id"
 
-        val query = s"UPDATE  city SET city_name = '$nama'" +
-          s"WHERE  city. city_id = $id"
-
-        // println("QUERY : "+query)
-
-        val result = statement.executeUpdate(query)
-
-        connection.close
-
-        // return result
-        } catch {
-        case e: Exception => e.printStackTrace
-    }
+    Query.execute(query)
   }
 
   def deleteData(id:Int) = {
 
-    try {
-      Class.forName(driver)
-      connection = DriverManager.getConnection(url, username, password)
-      val statement = connection.createStatement
-
-      val query = s"DELETE FROM  city` WHERE  city`. city_id` = $id"
-
-      val result = statement.executeUpdate(query)
-
-      connection.close
-
-      // return result
-
-      } catch {
-      case e: Exception => e.printStackTrace
-    }
+    val query = s"DELETE FROM  city` WHERE  city`. city_id` = $id"
+    Query.execute(query)
   }
 
 }

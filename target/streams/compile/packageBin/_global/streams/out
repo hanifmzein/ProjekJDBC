@@ -6,8 +6,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/ScalaJdbcConnectSelect.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	example/ScalaJdbcConnectSelect$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/ScalaJdbcConnectSelect$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Query.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/Query.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Conn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/Conn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Query$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/Query$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	example/ScalaJdbcConnectSelect$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/ScalaJdbcConnectSelect$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	example/Conn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/example/Conn$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	action[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes/action[0m
 [0m[[0m[0mdebug[0m] [0m[0m	action/CityDAO.class[0m

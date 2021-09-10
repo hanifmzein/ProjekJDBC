@@ -8,8 +8,6 @@ import model.Patient
 import model.City
 
 object ScalaJdbcConnectSelect extends App {
-
-
   
     var l = true
     while (l){
