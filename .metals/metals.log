@@ -18342,3 +18342,6 @@ WARNING: Unmatched cancel notification for request id 29824
 Sep 10, 2021 3:04:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 30045
 [0m2021.09.10 15:04:33 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/Query.scala[0m
+Sep 10, 2021 3:10:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 30065
+[0m2021.09.10 15:11:56 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/Query.scala[0m

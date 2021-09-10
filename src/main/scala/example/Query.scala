@@ -12,24 +12,18 @@ object Query{
             Class.forName(Conn.driver)
             Conn.connection = DriverManager.getConnection(Conn.url, Conn.username, Conn.password)
             val statement = Conn.connection.createStatement
-
             val result = statement.executeQuery(query)
 
             // Conn.connection.close
-            
             return result
-
-
         } catch {
             case e: Exception => e.printStackTrace
             return null
         }
-
     }
 
     def execute (query : String) = {
         try {
-
             Class.forName(Conn.driver)
             Conn.connection = DriverManager.getConnection(Conn.url, Conn.username, Conn.password)
             val statement = Conn.connection.createStatement
