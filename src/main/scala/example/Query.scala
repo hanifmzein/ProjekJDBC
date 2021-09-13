@@ -11,7 +11,7 @@ class Query{
 
         try {
             Class.forName(conn.driver)
-            conn.connection = DriverManager.getConnection(conn.url, conn.username, conn.password)
+            conn.connection = DriverManager.getConnection(conn.host, conn.username, conn.password)
             val st:Statement = conn.connection.createStatement
             return st
         } catch {

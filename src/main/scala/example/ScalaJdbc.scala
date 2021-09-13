@@ -1,12 +1,15 @@
 package example
 
+import example.action.{CityDAO, PatientDAO}
+import example.model.{City, Patient}
+
+import java.util.Properties
+import scala.io.Source
 import scala.io.StdIn.readLine
-import action.PatientDAO
-import action.CityDAO
-import model.Patient
-import model.City
 
 object ScalaJdbc extends App {
+
+
 
   def showPatient(patientList:List[Patient]): Unit ={
     for (item <- patientList){

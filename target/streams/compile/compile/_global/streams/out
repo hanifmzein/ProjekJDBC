@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/PatientDAO.scala:21:54: method toCharArray: (): Array[Char] does not take type parameters.[0m
-[0m[[0m[31merror[0m] [0m[0m      val gender = rs.getString("gender").toCharArray[0][0m
-[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/Conn.scala:9:22: object internal is not a member of package reflect[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.reflect.internal.util.NoSourceFile.path[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

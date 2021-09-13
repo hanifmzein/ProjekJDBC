@@ -1,11 +1,21 @@
 package example
 
+import java.net.URL
 import java.sql.Connection
+import java.util.Properties
+import scala.io.Source
+import java.io.FileInputStream
 
 class Conn {
-    val url = "jdbc:mysql://localhost:3306/rs_db?serverTimezone=Asia/Jakarta"
-    val driver = "com.mysql.cj.jdbc.Driver"
-    val username = "root"
-    val password = ""
     var connection:Connection = _
+    val properties = new Properties()
+    val in = new FileInputStream("application.properties")
+    properties.load(in)
+
+    val host: String = properties.getProperty("host")
+    val driver: String = properties.getProperty("driver")
+    val username: String = properties.getProperty("username")
+    val password: String = properties.getProperty("password")
+
+
 }
