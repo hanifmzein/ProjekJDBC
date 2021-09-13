@@ -1,7 +1,6 @@
-package model
-
-import model.Patient
+package example.model
 
 case class City(
-    city_id: Int , 
-    city_name: String)
+                 city_id: Option[Int],
+                 city_name: Option[String]) {
+}

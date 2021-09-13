@@ -1,20 +1,29 @@
 package example
 
+import java.sql.{DriverManager, PreparedStatement, ResultSet, Statement}
 import example.Conn
-import java.sql.{Connection,DriverManager}
-import java.sql.ResultSet
 
-object Query{
+class Query{
+
+    val conn = new Conn
+
+    def statement: Statement = {
+
+        try {
+            Class.forName(conn.driver)
+            conn.connection = DriverManager.getConnection(conn.url, conn.username, conn.password)
+            val st:Statement = conn.connection.createStatement
+            return st
+        } catch {
+            case e: Exception => e.printStackTrace
+                return null
+        }
+    }
 
     def read (query : String) : ResultSet = {
         try {
-
-            Class.forName(Conn.driver)
-            Conn.connection = DriverManager.getConnection(Conn.url, Conn.username, Conn.password)
-            val statement = Conn.connection.createStatement
             val result = statement.executeQuery(query)
-
-            // Conn.connection.close
+//            conn.connection.close
             return result
         } catch {
             case e: Exception => e.printStackTrace
@@ -24,18 +33,18 @@ object Query{
 
     def execute (query : String) = {
         try {
-            Class.forName(Conn.driver)
-            Conn.connection = DriverManager.getConnection(Conn.url, Conn.username, Conn.password)
-            val statement = Conn.connection.createStatement
+            statement.executeUpdate(query)
 
-            val result = statement.executeUpdate(query)
-
-            Conn.connection.close
+            conn.connection.close
 
         } catch {
             case e: Exception => e.printStackTrace
         }
 
+    }
+
+    def close: Unit = {
+        conn.connection.close()
     }
 
 }

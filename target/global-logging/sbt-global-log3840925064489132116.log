@@ -6,3 +6,5 @@
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
 [0m[[0m[32msuccess[0m] [0m[0mTotal time: 46 s, completed Sep 10, 2021 3:05:22 PM[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

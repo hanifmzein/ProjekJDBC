@@ -18345,3 +18345,94 @@ WARNING: Unmatched cancel notification for request id 30045
 Sep 10, 2021 3:10:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 30065
 [0m2021.09.10 15:11:56 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/Query.scala[0m
+[0m2021.09.11 09:28:11 INFO  shutting down Metals[0m
+[0m2021.09.13 08:14:13 INFO  Started: Metals version 0.10.6 in workspace '/Users/hanif/Programs/Scala/projekjdbc' for client Visual Studio Code 1.60.0.[0m
+[0m2021.09.13 08:14:14 INFO  time: initialize in 0.69s[0m
+[0m2021.09.13 08:14:14 WARN  Build server is not auto-connectable.[0m
+[0m2021.09.13 08:14:14 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/Query.scala[0m
+[0m2021.09.13 08:14:14 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/action/CityDAO.scala[0m
+[0m2021.09.13 08:14:15 INFO  skipping build import with status 'Requested'[0m
+[0m2021.09.13 08:14:18 INFO  no build target: using presentation compiler with only scala-library: 2.12.14[0m
+[0m2021.09.13 08:14:21 INFO  time: code lens generation in 4.53s[0m
+[0m2021.09.13 08:14:21 INFO  time: code lens generation in 4.61s[0m
+Sep 13, 2021 8:17:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+[0m2021.09.13 08:22:40 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/City.scala[0m
+[0m2021.09.13 08:22:44 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:22:54 INFO  time: code lens generation in 1.29s[0m
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 83)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 77)
+Sep 13, 2021 8:22:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 76)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 77)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 79)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 78)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 76)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 83)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 78)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[model.City]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 79)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[model.City]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 67, 67, 79)
+[0m2021.09.13 08:23:01 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:23:18 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:23:45 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:24:04 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 68, 68, 84)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[Int]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 68, 68, 79)
+[0m2021.09.13 08:53:38 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 124, 124, 133)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 124, 124, 134)
+[0m2021.09.13 08:53:45 INFO  time: code lens generation in 1.78s[0m
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[String]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 124, 124, 138)
+[0m2021.09.13 08:53:45 INFO  time: code lens generation in 2.34s[0m
+[0m2021.09.13 08:53:45 INFO  time: code lens generation in 1.29s[0m
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[String]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 124, 124, 138)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[String]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 124, 124, 138)
+Sep 13, 2021 8:53:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving value <import>
+java.util.concurrent.CompletionException: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving value <import>
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving value <import>
+
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 167)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 160)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 163)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 162)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 161)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 160)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 167)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 160)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 161)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 162)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[Char]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 151, 151, 163)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 180, 180, 196)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 180, 180, 189)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 180, 180, 190)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[String]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 180, 180, 194)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 224)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 217)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 224)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 217)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[<error>]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 218)
+something's wrong: no file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala in Option[String]RangePosition(file:///Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala, 208, 208, 222)
+[0m2021.09.13 08:54:10 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:54:10 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:54:10 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/model/Patient.scala[0m
+[0m2021.09.13 08:55:20 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+[0m2021.09.13 08:55:47 WARN  no build target for: /Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala[0m
+Sep 13, 2021 9:28:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 502
+Sep 13, 2021 9:29:46 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 512
+[0m2021.09.13 09:43:16 INFO  shutting down Metals[0m

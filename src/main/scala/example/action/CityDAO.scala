@@ -1,56 +1,68 @@
-package action
-
-import model.City
-import java.sql.{Connection,DriverManager}
+package example.action
 
 import example.Query
 import example.Conn
+import example.model.City
 
-object CityDAO {
+class CityDAO {
+  val query = new Query
+  val conn = new Conn
 
-  val url = "jdbc:mysql://localhost:3306/rs_db?serverTimezone=Asia/Jakarta"
-  val driver = "com.mysql.cj.jdbc.Driver"
-  val username = "root"
-  val password = ""
-  var connection:Connection = _
+  def getData(): List[City] = {
 
-  def showData(){
+    var cityList:List[City] = List()
 
-    val query = "SELECT * FROM city"
-    val rs = Query.read(query)
+    val squery = "SELECT * FROM city"
+    val rs = query.read(squery)
 
     while (rs.next) {
-      val id = rs.getString("city_id")
+      val id = rs.getString("city_id").toInt
       val name = rs.getString("city_name")
 
-      println(s"City #$id\nNama : $name")
+      val cityBaru = City(Option(id), Option(name))::Nil
+      cityList = cityList ::: cityBaru
     }
 
-    Conn.connection.close
+    query.close
+
+    return cityList
+
   }
    
   def addData( city:City ) = {
 
-    val nama = city.city_name
-    val query = s"INSERT INTO  city (city_name) VALUES ('$nama')"
-    Query.execute(query)
+    val nama = city.city_name.get
+    val squery = s"INSERT INTO  city (city_name) VALUES ('$nama')"
+    query.execute(squery)
   }
 
   def updateData( city:City) = {
 
-    val id = city.city_id
-    val nama = city.city_name
+    val id = city.city_id.get
+    val nama = city.city_name.get
 
-    val query = s"UPDATE  city SET city_name = '$nama'" +
-      s"WHERE  city. city_id = $id"
+    val squery = s"UPDATE  city SET city_name = '$nama' WHERE  city. city_id = $id"
 
-    Query.execute(query)
+
+    query.execute(squery)
   }
 
   def deleteData(id:Int) = {
 
-    val query = s"DELETE FROM  city` WHERE  city`. city_id` = $id"
-    Query.execute(query)
+    val squery = s"DELETE FROM city WHERE `city_id` = $id"
+    query.execute(squery)
+  }
+
+  def getItem(id:Int) : City = {
+    val squery = s"SELECT * FROM `city` WHERE `city_id` = $id"
+
+    val row = query.read(squery)
+
+    row.next()
+    val name = row.getString("city_name")
+    val city = City(Option(id), Option(name))
+
+    city
   }
 
 }

@@ -1,0 +1,65 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(be6bb28b-0741-433c-8dbe-e4f316af56f1), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@25f14e93, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/hanif/Programs/Scala/projekjdbc/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:36:36: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[model.City][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(_, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:36:44: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(_, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:36:52: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Char[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[Char][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(_, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:36:62: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(_, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:36:70: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(_, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:33: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[Int][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:39: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[model.City][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:47: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:55: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Char[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[Char][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:65: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/hanif/Programs/Scala/projekjdbc/src/main/scala/example/ScalaJdbc.scala:52:73: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : String[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[String][0m
+[0m[[0m[31merror[0m] [0m[0m        val t_patient = Patient(i_id, i_city, i_name, i_gender, i_date, i_address)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Sep 13, 2021 8:55:51 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

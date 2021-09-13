@@ -1,77 +1,107 @@
-package action
+package example.action
 
-import model.Patient
-import java.sql.{Connection,DriverManager}
+import example.model.Patient
+import example.{Conn, Query}
 
-import example.Query
-import example.Conn
+class PatientDAO {
+  val query = new Query()
+  val conn = new Conn()
 
-object PatientDAO {
+  def getData() : List[Patient] = {
 
-  def showData(){
+    var patientList: List[Patient] = List()
 
-    val query = "SELECT * FROM patient"
-    val rs = Query.read(query)
+    val squery = "SELECT * FROM patient"
+    val rs = query.read(squery)
 
     while (rs.next) {
-      val id = rs.getString("patient_id")
-      val city_id = rs.getString("city_id")
+      val id = rs.getString("patient_id").toInt
+      val city_id = rs.getString("city_id").toInt
       val name = rs.getString("patient_name")
-      val gender = rs.getString("gender")
+      val gender = rs.getString("gender").charAt(0)
       val birth = rs.getString("date_birth")
       val address = rs.getString("address")
 
-      // //get City_name from city_id
-      // val query_city = s"SELECT * FROM `city` WHERE `city_id` = $city_id"
-      // println("query : "+query_city)
+      val cityDAO = new CityDAO
+      val city = cityDAO.getItem(city_id)
 
-      // val rs_city = statement.executeQuery(query_city)
-      // rs_city.next
-      // val city = rs_city.getString("city_name")
+//      println(s"Pasien #$id\nNama : $name\nCity : $city_id\nGender : $gender\nLahir : $birth\nAlamat : $address\n")
 
-      println(s"Pasien #$id\nNama : $name\nCity : $city_id\nGender : $gender\nLahir : $birth\nAlamat : $address\n")
+      val patientBaru = Patient(Option(id),Option(city), Option(name), Option(gender), Option(birth), Option(address))::Nil
+      patientList = patientList ::: patientBaru
     }
 
-    Conn.connection.close
+    query.close
+
+    patientList
+
   }
    
-  def addData( patient:Patient) = {
+  def addData( patient: Patient) = {
 
-    val city = patient.city_id
-    val nama = patient.patient_name
-    val gender = patient.gender
-    val date = patient.date_birth
-    val address = patient.address
+    val city = patient.city.get
+    val nama = patient.patient_name.get
+    val gender = patient.gender.get
+    val date = patient.date_birth.get
+    val address = patient.address.get
 
-    val query = s"INSERT INTO `patient`(`patient_name`,`city_id`, `gender`, `date_birth`, `address`) " +
-              s"VALUES ('$nama','$city','$gender','$date','$address')"
+    val city_id = city.city_id.get
 
-    Query.execute(query)
-    Conn.connection.close
+    val squery = s"INSERT INTO `patient`(`patient_name`,`city_id`, `gender`, `date_birth`, `address`) " +
+              s"VALUES ('$nama','$city_id','$gender','$date','$address')"
+
+    query.execute(squery)
   }
 
   def updateData( patient:Patient) = {
 
-    val id = patient.patient_id
-    val city = patient.city_id
-    val nama = patient.patient_name
-    val gender = patient.gender
-    val date = patient.date_birth
-    val address = patient.address
+    val id = patient.patient_id.get
+    val city = patient.city.get
+    val nama = patient.patient_name.get
+    val gender = patient.gender.get
+    val date = patient.date_birth.get
+    val address = patient.address.get
 
-    val query = s"UPDATE `patient` SET `patient_name` = '$nama',`city_id` = $city, `gender` = '$gender', `date_birth` = '$date', `address` = '$address' " +
+    val city_id = city.city_id.get
+
+    val squery = s"UPDATE `patient` SET `patient_name` = '$nama',`city_id` = $city_id, `gender` = '$gender', `date_birth` = '$date', `address` = '$address' " +
       s"WHERE `patient`.`patient_id` = $id"
+    println("QUERY : "+query)
 
-    Query.execute(query)
-    Conn.connection.close
+    query.execute(squery)
   }
 
   def deleteData(id:Int) = {
 
-    val query = s"DELETE FROM `patient` WHERE `patient`.`patient_id` = $id"
-    Query.execute(query)
-    Conn.connection.close
+    val squery = s"DELETE FROM `patient` WHERE `patient`.`patient_id` = $id"
+    query.execute(squery)
 
   }
+
+//  def getItem(id:Int) : Patient = {
+//    val squery = s"SELECT * FROM `patient` WHERE `patient_id` = $id"
+//
+//    val row = query.read(squery)
+//
+//    row.next()
+//    val name = row.getString("patient_name")
+//    val city_id = row.getString("city_id").toInt
+//    val gender = row.getString("gender").toCharArray[0]
+//    val date = row.getString("date_birth")
+//    val alamat = row.getString("address")
+//
+//    val cityDAO = new CityDAO
+//    val city = cityDAO.getItem(city_id)
+//
+//    val patient = Patient(
+//      Option(id),
+//      Option(city),
+//      Option(name),
+//      Option(gender),
+//      Option(date),
+//      Option(alamat))
+//
+//    patient
+//  }
 
 }
