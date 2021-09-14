@@ -16,19 +16,20 @@ class PatientDAO {
 
     while (rs.next) {
       val id = rs.getString("patient_id").toInt
-      val city_id = rs.getString("city_id").toInt
+      val city_id = Option(rs.getString("city_id")).getOrElse("13").toInt
       val name = rs.getString("patient_name")
       val gender = rs.getString("gender").charAt(0)
       val birth = rs.getString("date_birth")
       val address = rs.getString("address")
 
+//      println(s"$id $city_id $name $gender $birth $address")
+
       val cityDAO = new CityDAO
       val city = cityDAO.getItem(city_id)
 
-//      println(s"Pasien #$id\nNama : $name\nCity : $city_id\nGender : $gender\nLahir : $birth\nAlamat : $address\n")
-
-      val patientBaru = Patient(Option(id),Option(city), Option(name), Option(gender), Option(birth), Option(address))::Nil
+      val patientBaru = Patient(id, city_id, Option(city), name, gender, birth, address)::Nil
       patientList = patientList ::: patientBaru
+
     }
 
     query.close
@@ -40,12 +41,12 @@ class PatientDAO {
   def addData( patient: Patient) = {
 
     val city = patient.city.get
-    val nama = patient.patient_name.get
-    val gender = patient.gender.get
-    val date = patient.date_birth.get
-    val address = patient.address.get
+    val nama = patient.patient_name
+    val gender = patient.gender
+    val date = patient.date_birth
+    val address = patient.address
 
-    val city_id = city.city_id.get
+    val city_id = city.city_id
 
     val squery = s"INSERT INTO `patient`(`patient_name`,`city_id`, `gender`, `date_birth`, `address`) " +
               s"VALUES ('$nama','$city_id','$gender','$date','$address')"
@@ -55,14 +56,14 @@ class PatientDAO {
 
   def updateData( patient:Patient) = {
 
-    val id = patient.patient_id.get
+    val id = patient.patient_id
     val city = patient.city.get
-    val nama = patient.patient_name.get
-    val gender = patient.gender.get
-    val date = patient.date_birth.get
-    val address = patient.address.get
+    val nama = patient.patient_name
+    val gender = patient.gender
+    val date = patient.date_birth
+    val address = patient.address
 
-    val city_id = city.city_id.get
+    val city_id = city.city_id
 
     val squery = s"UPDATE `patient` SET `patient_name` = '$nama',`city_id` = $city_id, `gender` = '$gender', `date_birth` = '$date', `address` = '$address' " +
       s"WHERE `patient`.`patient_id` = $id"

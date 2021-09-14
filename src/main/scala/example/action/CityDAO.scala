@@ -19,7 +19,7 @@ class CityDAO {
       val id = rs.getString("city_id").toInt
       val name = rs.getString("city_name")
 
-      val cityBaru = City(Option(id), Option(name))::Nil
+      val cityBaru = City(id, name)::Nil
       cityList = cityList ::: cityBaru
     }
 
@@ -31,15 +31,15 @@ class CityDAO {
    
   def addData( city:City ) = {
 
-    val nama = city.city_name.get
+    val nama = city.city_name
     val squery = s"INSERT INTO  city (city_name) VALUES ('$nama')"
     query.execute(squery)
   }
 
   def updateData( city:City) = {
 
-    val id = city.city_id.get
-    val nama = city.city_name.get
+    val id = city.city_id
+    val nama = city.city_name
 
     val squery = s"UPDATE  city SET city_name = '$nama' WHERE  city. city_id = $id"
 
@@ -60,7 +60,7 @@ class CityDAO {
 
     row.next()
     val name = row.getString("city_name")
-    val city = City(Option(id), Option(name))
+    val city = City(id, name)
 
     city
   }

@@ -3,8 +3,6 @@ package example
 import example.action.{CityDAO, PatientDAO}
 import example.model.{City, Patient}
 
-import java.util.Properties
-import scala.io.Source
 import scala.io.StdIn.readLine
 
 object ScalaJdbc extends App {
@@ -13,11 +11,11 @@ object ScalaJdbc extends App {
 
   def showPatient(patientList:List[Patient]): Unit ={
     for (item <- patientList){
-      val id = item.patient_id.get
-      val nama = item.patient_name.get
-      val city = item.city.get.city_name.get
-      val gender = item.gender.get
-      val alamat = item.address.get
+      val id = item.patient_id
+      val nama = item.patient_name
+      val city = item.city.get.city_name
+      val gender = item.gender
+      val alamat = item.address
 
       println(s"\nPasien #$id\nNama : $nama\nKota : $city\nGender : $gender\nAlamat : $alamat")
     }
@@ -26,8 +24,8 @@ object ScalaJdbc extends App {
   def showCity(cityList:List[City]): Unit ={
 
     for (item <- cityList){
-      val id = item.city_id.get
-      val nama = item.city_name.get
+      val id = item.city_id
+      val nama = item.city_name
 
       println(s"\nKota #$id\nNama : $nama")
     }
@@ -62,7 +60,7 @@ object ScalaJdbc extends App {
 
       val city = cityDAO.getItem(i_city)
 
-      val t_patient = Patient(Option(0), Option(city), Option(i_name), Option(i_gender), Option(i_date), Option(i_address))
+      val t_patient = Patient(0, i_city, Option(city), i_name, i_gender, i_date, i_address)
 
       patientDAO.addData(t_patient)
 
@@ -81,12 +79,13 @@ object ScalaJdbc extends App {
       val city = cityDAO.getItem(i_city)
 
       val t_patient = Patient(
-        Option(i_id),
+        i_id,
+        i_city,
         Option(city),
-        Option(i_name),
-        Option(i_gender),
-        Option(i_date),
-        Option(i_address))
+        i_name,
+        i_gender,
+        i_date,
+        i_address)
 
       patientDAO.updateData(t_patient)
 
@@ -113,7 +112,7 @@ object ScalaJdbc extends App {
 
           if (pilih == "1"){
             val i_name = readLine("Masukan Nama city : ")
-            val t_city = City(Option(0), Option(i_name))
+            val t_city = City(0, i_name)
 
             cityDAO.addData(t_city)
 
@@ -122,7 +121,7 @@ object ScalaJdbc extends App {
             val i_id = readLine("Masukan id city : ").toInt
             val i_name = readLine("Masukan Nama city : ")
 
-            val t_city = City(Option(i_id), Option(i_name))
+            val t_city = City(i_id, i_name)
 
             cityDAO.updateData(t_city)
 
